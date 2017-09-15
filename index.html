@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>PAWS MAP</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <h4>Search - List</h4>
+      <ul class="nav nav-pills nav-stacked">
+        <form class="form-inline">
+          <div class="input-group">
+            <input type="text" class="form-control" id="place-input" placeholder="Where do you want to take your pet to?">
+            <span class="input-group-btn">
+              <button type="submit" class="btn btn-default" id="add-location">Find</button>
+            </span>
+          </div>
+        </form>
+
+        <li>Weather</li>
+        <li>List</li>
+      </ul><br>
+    </div>
+
+    <div id="map-area" class="col-sm-9">
+      <div id="animated-text">
+        let's Find
+        <div id=flip>
+          <div>
+            <div class="cafe">Cafes</div>
+          </div>
+          <div>
+            <div class="park">Dog Parks</div>
+          </div>
+          <div>
+            <div class="hospital">Animal Hospitals</div>
+          </div>
+        </div>
+        For Your Dog
+      </div>
+   
+      <div id="map"></div>
+
+      <div id="infowindow-content">
+        <img src="" width="16" height="16" id="place-icon">
+        <span id="place-name"  class="title"></span><br>
+        <span id="place-address"></span>
+      </div>
+
+  </div>
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0eBACw3HV2GbFMt2wcjcblg-UDMM-DuI&libraries=places&callback=initMap"></script>
+</body>
+</html>
